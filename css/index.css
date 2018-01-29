@@ -204,9 +204,13 @@
     height: 100%;
 }
 .banner .img_box li{
+	position: absolute;
+	top:0;
+	left:0;
 	width: 100%;
 	height: 100%;
-	display: none;
+	opacity: 0;
+	transition: opacity 1s;
 }
 .banner .img_box li a{
 	display: block;
@@ -214,7 +218,7 @@
 	height: 100%;
 }
 .img_box li.active{
-	display: block;
+	opacity: 1;
 }
 .banner .aside_box{
 	width: 234px;
@@ -275,6 +279,8 @@
 }
 .lunbodian li:last-child{
 	margin-right: 0;
+}
+.lunbodian li.act{
 	background: rgba(0, 0, 0, 0.7)
 }
 .banner_jiantou_left{
@@ -307,7 +313,6 @@
     line-height: 69px;
     color: #fff;
 }
-
 /* 广告 */
 .advertise{
 	width: 1226px;
